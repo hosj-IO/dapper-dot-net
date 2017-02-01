@@ -1797,7 +1797,7 @@ namespace Dapper
             else
             {
                 result = command.CreateParameter();
-                result.ParameterName = name;
+                result.ParameterName = $"p_{name}";
                 parameters.Add(result);
             }
             return result;
